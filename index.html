@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login jQuery Mobile</title>
+
+    <!-- jQuery Mobile CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- ThemeRoller Theme -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/themes/default/jquery.mobile.icons.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<!-- PAGE 1 LOGIN -->
+<div data-role="page" id="page1" data-theme="b">
+
+    <div data-role="header" data-theme="c">
+        <h1>Login Page</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <form id="loginForm">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+
+           <button type="submit" class="ui-btn ui-btn-a">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+    <div data-role="footer">
+        <h4>DFK20013</h4>
+    </div>
+
+    <!-- Popup -->
+    <div data-role="popup" id="popupMsg" data-theme="a" class="ui-content">
+
+        <div data-role="header">
+            <h1>Makluman</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>Sila isi username & password</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- PAGE 2 INFO -->
+<div data-role="page" id="page2" data-theme="c">
+
+    <div data-role="header">
+        <h1>Info Page</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <h3>Login Berjaya 🎉</h3>
+        <p>Selamat datang ke halaman kedua.</p>
+
+        <a href="#page3" class="ui-btn ui-btn-inline ui-btn-c">Page 3</a>
+        <a href="#page1" class="ui-btn ui-btn-inline ui-btn-b">Logout</a>
+
+    </div>
+
+</div>
+
+
+<!-- PAGE 3 -->
+<div data-role="page" id="page3" data-theme="d">
+
+    <div data-role="header">
+        <h1>Page 3</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <p>Ini page tambahan dalam index.html</p>
+
+        <a href="#page2" class="ui-btn ui-btn-inline ui-btn-a">Back</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
